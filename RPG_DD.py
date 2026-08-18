@@ -1,5 +1,4 @@
 #RPG D&D
-#Eduardo Costa Vieira
 
 import tkinter as tk
 from tkinter import ttk, messagebox
@@ -35,10 +34,6 @@ class RPGApp:
     def limpar(self):
         for w in self.root.winfo_children():
             w.destroy()
-
-    def adicionar_rodape(self):
-        tk.Label(self.root,text="Aluno: Eduardo Costa Vieira",
-                 bg=BG,fg="gray80").place(relx=0.99,rely=0.99,anchor="se")
 
     def tela_inicial(self):
         self.limpar()
